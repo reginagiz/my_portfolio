@@ -7,6 +7,9 @@ import PortfolioIcon from "../images/PortfolioIcon";
 function Header() {
   return (
     <div className={s.header}>
+       <div className={s.logo_container}>
+          <img src={require('../images/logo.png')}></img>
+        </div>
       <div className={s.icons}>
         <div className={s.icon_container}>
           <div className={s.img_container}>
