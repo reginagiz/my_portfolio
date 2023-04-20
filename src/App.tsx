@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import Homepage from './components/Homepage';
+import React from "react"
+import "./App.css"
+import Header from "./components/Header"
+import Homepage from "./components/Homepage"
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <Homepage />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

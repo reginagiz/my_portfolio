@@ -8,4 +8,4 @@ const PortfolioIcon = () => {
     </svg>
   )
 }
-export default PortfolioIcon;
+export default PortfolioIcon
