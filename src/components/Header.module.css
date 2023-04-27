@@ -20,6 +20,12 @@
   fill: #f7f474;
   stroke: #f7f474;
 }
+button {
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
 
 .logo_container {
   max-width: 25rem;
@@ -40,8 +46,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #f7f474;
 }
-.header_button:hover {
+.header_button:hover,
+.header_button:focus {
   color: #2cffea;
   fill: #2cffea;
   stroke: #2cffea;
@@ -52,8 +60,6 @@
   margin-bottom: 0.5rem;
 }
 .burger_menu {
-  background-color: inherit;
-  border: none;
   width: 3.5rem;
   fill: #f7f474;
 }

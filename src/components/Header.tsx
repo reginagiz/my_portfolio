@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import s from "./Header.module.css"
 import GirlIcon from "../images/GirlIcon"
 import ContactsIcon from "../images/ContactsIcon"
@@ -10,26 +11,30 @@ function Header() {
   const [show, setShow] = React.useState<boolean>(false)
   const openModal = () => setShow(true)
   const closeModal = () => setShow(false)
+  const navigate = useNavigate()
 
   return (
     <div className={s.header}>
       <div className={s.header_container}>
-        <div className={s.logo_container}>
-          <img src={require("../images/logo.png")}></img>
-        </div>
+        <button className={s.logo_container} onClick={() => navigate("/")}>
+          <img src={require("../images/logo.png")} alt="logo"></img>
+        </button>
         <div className={s.icons_container}>
-          <div className={s.header_button}>
+          <button
+            className={s.header_button}
+            onClick={() => navigate("/about")}
+          >
             <GirlIcon />
             <div>About me</div>
-          </div>
-          <div className={s.header_button}>
+          </button>
+          <button className={s.header_button}>
             <PortfolioIcon />
             <div>Portfolio</div>
-          </div>
-          <div className={s.header_button}>
+          </button>
+          <button className={s.header_button}>
             <ContactsIcon />
             <div>Contacts</div>
-          </div>
+          </button>
         </div>
         {!show && (
           <button className={s.burger_menu} onClick={openModal}>

@@ -1,6 +1,85 @@
+.profile {
+  min-width: 100%;
+}
 .profile_container {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  padding: 1rem;
+  color: #f7f474;
+}
+.text_container::before {
+  content: "";
+  background-image: url("../images/brackets.svg");
+  width: 17rem;
+  height: 3rem;
+  margin-bottom: -1.7rem;
+  border-bottom: 0.1rem dashed #f7f474;
+}
+.text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text_container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.3rem solid #f7f474;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  letter-spacing: 2px;
+}
+.title {
+  padding-bottom: 0.5rem;
+  font-family: "Amatic SC", cursive;
+  color: #2cffea;
+  margin-top: 0.5rem;
+}
+
+.text_container ul li {
+  margin-bottom: 0.5rem;
+}
+.cow_icon {
+  background-image: url("../images/ufo-and-cow.svg");
+  width: 5rem;
+  height: 5rem;
+}
+.astronaut_icon {
+  background-image: url("../images/astronaut.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 20rem;
+}
+@media (width < 768px) {
+  .profile_container {
+    flex-direction: column;
+  }
+  .astronaut_icon {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (768px <= width < 1024px) {
+  .text_container::before {
+    width: 23rem;
+    height: 3rem;
+  }
+}
+
+@media (1024px <= width) {
+  .profile_container {
+    max-width: 1024px;
+  }
+  .astronaut_icon {
+    width: 24rem;
+    height: 24rem;
+  }
+  .text_container::before {
+    width: 30.5rem;
+    height: 3rem;
+  }
 }

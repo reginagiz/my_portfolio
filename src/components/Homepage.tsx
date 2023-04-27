@@ -6,7 +6,7 @@ function Homepage() {
     <div className={s.homepage}>
       <div className={s.homepage_container}>
         <div className={s.photo_container}>
-          <img src={require("../images/my_photo.png")}></img>
+          <img src={require("../images/my_photo.png")} alt="my_photo"></img>
         </div>
         <div className={s.text_container}>
           <h1 className={s.title}>Hi, my name is Regina</h1>

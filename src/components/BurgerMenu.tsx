@@ -2,9 +2,15 @@ import s from "./BurgerMenu.module.css"
 import GirlIcon from "../images/GirlIcon"
 import ContactsIcon from "../images/ContactsIcon"
 import PortfolioIcon from "../images/PortfolioIcon"
+import { useNavigate } from "react-router-dom"
 
 function BurgerMenu(props: any) {
   const { show, closeModal } = props
+  const navigate = useNavigate()
+  const navigateAbout = () => {
+    closeModal()
+    navigate("/about")
+  }
 
   return (
     <>
@@ -14,7 +20,10 @@ function BurgerMenu(props: any) {
             (Close this thing)
           </button>
           <div className={s.buttons_burger_container}>
-            <button className={s.burger_menu_button}>
+            <button
+              className={s.burger_menu_button}
+              onClick={() => navigateAbout()}
+            >
               <GirlIcon />
               <div>About me</div>
             </button>

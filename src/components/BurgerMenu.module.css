@@ -33,9 +33,10 @@
   font-family: "Amatic SC", cursive;
   color: #002f3c;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
-.buttons_burger_container div:hover {
+.buttons_burger_container div:hover,
+.buttons_burger_container div:focus {
   color: #ff2c78;
   transform: scale(1.1);
 }
@@ -44,14 +45,14 @@
   margin: 0 auto;
   border: none;
   width: 5rem;
-  padding: 0;
   margin-bottom: 4rem;
 }
 .burger_menu_button:last-child {
   margin-bottom: 0;
 }
 
-.burger_menu_button:hover {
+.burger_menu_button:hover,
+.burger_menu_button:focus {
   color: #ff2c78;
   fill: #ff2c78;
   stroke: #ff2c78;
@@ -65,4 +66,9 @@
   color: #002f3c;
   font-size: 3rem;
   margin-bottom: 2rem;
+}
+.close_menu_button:hover,
+.close_menu_button:focus {
+  color: #ff2c78;
+  transform: scale(1.1);
 }
