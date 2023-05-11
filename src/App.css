@@ -8,20 +8,20 @@ body {
 }
 
 .App {
-  font-size: 14px;
+  font-size: 18px;
   min-height: 100vh;
-  min-width: 320px;
-  font-family: "Delicious Handrawn", regular;
+  min-width: 352px;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 @media (768px <= width <= 1024px) {
   .App {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
 @media (1024px <= width) {
   .App {
-    font-size: 20px;
+    font-size: 22px;
   }
 }

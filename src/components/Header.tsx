@@ -27,11 +27,17 @@ function Header() {
             <GirlIcon />
             <div>About me</div>
           </button>
-          <button className={s.header_button}>
+          <button
+            className={s.header_button}
+            onClick={() => navigate("/portfolio")}
+          >
             <PortfolioIcon />
             <div>Portfolio</div>
           </button>
-          <button className={s.header_button}>
+          <button
+            className={s.header_button}
+            onClick={() => navigate("/contacts")}
+          >
             <ContactsIcon />
             <div>Contacts</div>
           </button>

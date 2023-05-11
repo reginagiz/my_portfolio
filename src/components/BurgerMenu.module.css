@@ -35,8 +35,8 @@
   font-weight: bolder;
   font-size: 1.5rem;
 }
-.buttons_burger_container div:hover,
-.buttons_burger_container div:focus {
+.burger_menu_button div:hover,
+.burger_menu_button div:focus {
   color: #ff2c78;
   transform: scale(1.1);
 }

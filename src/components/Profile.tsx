@@ -1,5 +1,6 @@
 import React from "react"
 import s from "./Profile.module.css"
+import CowIcon from "../images/CowIcon"
 
 function Profile() {
   return (
@@ -20,7 +21,7 @@ function Profile() {
             <li>Work with database management system MongoDB.</li>
             <li>Work with cloud platform Heroku.</li>
             <li>Testing & Debugging.</li>
-            <div className={s.cow_icon}></div>
+            <CowIcon />
           </ul>
         </div>
         <div className={s.astronaut_icon}></div>

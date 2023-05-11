@@ -42,10 +42,10 @@
 .text_container ul li {
   margin-bottom: 0.5rem;
 }
-.cow_icon {
-  background-image: url("../images/ufo-and-cow.svg");
+.text_container svg {
   width: 5rem;
   height: 5rem;
+  fill: #2cffea;
 }
 .astronaut_icon {
   background-image: url("../images/astronaut.svg");

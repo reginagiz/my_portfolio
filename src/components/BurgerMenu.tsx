@@ -6,10 +6,20 @@ import { useNavigate } from "react-router-dom"
 
 function BurgerMenu(props: any) {
   const { show, closeModal } = props
+
   const navigate = useNavigate()
+
   const navigateAbout = () => {
     closeModal()
     navigate("/about")
+  }
+  const navigateContacts = () => {
+    closeModal()
+    navigate("/contacts")
+  }
+  const navigatePortfolio = () => {
+    closeModal()
+    navigate("/portfolio")
   }
 
   return (
@@ -27,11 +37,17 @@ function BurgerMenu(props: any) {
               <GirlIcon />
               <div>About me</div>
             </button>
-            <button className={s.burger_menu_button}>
+            <button
+              className={s.burger_menu_button}
+              onClick={() => navigatePortfolio()}
+            >
               <PortfolioIcon />
               <div>Portfolio</div>
             </button>
-            <button className={s.burger_menu_button}>
+            <button
+              className={s.burger_menu_button}
+              onClick={() => navigateContacts()}
+            >
               <ContactsIcon />
               <div>Contacts</div>
             </button>
