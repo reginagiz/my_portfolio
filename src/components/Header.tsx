@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { useNavigate } from "react-router-dom"
 import s from "./Header.module.css"
 import GirlIcon from "../images/GirlIcon"

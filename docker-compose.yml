@@ -1,0 +1,22 @@
+version: "3"
+services:
+  frontend:
+    image: gizregiz/movies_library_front:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    stdin_open: true
+    networks:
+      - movies-library
+
+  backend:
+    image: gizregiz/movies_library_back:backend
+    ports:
+      - "5000:8001"
+    networks:
+      - movies-library
+
+networks:
+  movies-library:
+    driver: bridge

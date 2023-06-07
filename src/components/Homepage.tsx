@@ -1,4 +1,3 @@
-import React from "react"
 import s from "./Homepage.module.css"
 import CowIcon from "../images/CowIcon"
 

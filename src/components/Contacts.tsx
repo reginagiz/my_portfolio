@@ -1,4 +1,3 @@
-import React from "react"
 import s from "./Contacts.module.css"
 import EarthIcon from "../images/EarthIcon"
 import MoonIcon from "../images/MoonIcon"
